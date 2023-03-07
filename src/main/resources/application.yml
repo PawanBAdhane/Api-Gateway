@@ -13,8 +13,8 @@ spring:
                 - id: welcome-api
                   uri: lb://WELCOME-API
                   predicates:
-                      - path=/welcome
+                  - Path=/welcome
                 - id: greet-api
                   uri: lb://GREET-API
-                  predicate:
-                      - path=/greet
+                  predicates:
+                  - Path=/greet
